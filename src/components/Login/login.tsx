@@ -4,7 +4,7 @@ import "./login.scss"
 const Login = () => {
   return (
     <>
-      <div >
+      <div>
         <form>
           <Box
             display="flex"

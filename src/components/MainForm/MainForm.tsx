@@ -24,6 +24,8 @@ const MainForm = () => {
   return (
     <>
       <Header />
+      <div className="container">
+
       <div style={{ width: "100%" }}>
         <Box
           sx={{
@@ -58,11 +60,15 @@ const MainForm = () => {
           </Box>
         </Box>
       </div>
-      <Accordion>
+
+
+
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Merriage Details
@@ -70,22 +76,22 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Application Date</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Marriage Date</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Marriage Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -98,11 +104,13 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
+             
           }}
         >
           Husband Details
@@ -110,24 +118,24 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Surname</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Birth Date</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 {/* <Typography >Merrage Certificate details</Typography> */}
                 <InputLabel>Status of Bridegroom at the time</InputLabel>
                 <Select label="Age" sx={{ width: "100%" }}>
@@ -139,7 +147,7 @@ const MainForm = () => {
                   <MenuItem value={22}>Twenty one and a half</MenuItem>
                 </Select>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 {/* <Typography >Merrage Certificate details</Typography> */}
                 <InputLabel>Religious</InputLabel>
                 <Select label="Age" sx={{ width: "100%" }}>
@@ -151,47 +159,47 @@ const MainForm = () => {
                   <MenuItem value={22}>Twenty one and a half</MenuItem>
                 </Select>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <h3>Guardian/Mother/Father</h3>
                 <InputLabel>Surname</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Grid item xs={6} sx={{ width: "100%", mt: "60px" }}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Contact(Landline)</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Mobile</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Email</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -204,11 +212,12 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Wife Details
@@ -216,24 +225,24 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Surname</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Birth Date</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 {/* <Typography >Merrage Certificate details</Typography> */}
                 <InputLabel>Status of Bridegroom at the time</InputLabel>
                 <Select label="Age" sx={{ width: "100%" }}>
@@ -245,7 +254,7 @@ const MainForm = () => {
                   <MenuItem value={22}>Twenty one and a half</MenuItem>
                 </Select>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 {/* <Typography >Merrage Certificate details</Typography> */}
                 <InputLabel>Religious</InputLabel>
                 <Select label="Age" sx={{ width: "100%" }}>
@@ -257,47 +266,47 @@ const MainForm = () => {
                   <MenuItem value={22}>Twenty one and a half</MenuItem>
                 </Select>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <h3>Guardian/Mother/Father</h3>
                 <InputLabel>Surname</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Grid item xs={6} sx={{ width: "100%", mt: "60px" }}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Contact(Landline)</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Mobile</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Email</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -310,11 +319,12 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Priest Details
@@ -322,25 +332,25 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Date of Birth</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Priest Location</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Grid item xs={12}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -353,11 +363,12 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Witness-1 Details
@@ -365,21 +376,21 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Date of Birth</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -392,11 +403,12 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Witness-2 Details
@@ -404,21 +416,21 @@ const MainForm = () => {
         <AccordionDetails>
           <FormGroup>
             <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Name</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Date of Birth</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Age</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <InputLabel>Address</InputLabel>
-                <TextField variant="outlined" sx={{ width: "100%" }} />
+                <TextField variant="outlined" sx={{ width: "100%" }} className="form-control" />
               </Grid>
               <Button
                 variant="contained"
@@ -431,11 +443,12 @@ const MainForm = () => {
           </FormGroup>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="accordion">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           sx={{
-            backgroundColor: "gray",
+           backgroundColor: "#1976d2",
+            color:"#fff",
           }}
         >
           Attachment Document
@@ -524,11 +537,12 @@ const MainForm = () => {
       <Box textAlign="center">
         <Button
           variant="contained"
-          sx={{ width: "30%", height: "70px", mt: "150px" }}
+          sx={{ width: "30%", height: "70px", mt: "50px" }}
         >
           Apply for marriage Registration
         </Button>
       </Box>
+      </div>
       <Footer />
     </>
   );

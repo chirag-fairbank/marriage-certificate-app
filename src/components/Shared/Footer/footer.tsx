@@ -25,7 +25,7 @@ const Footer = ()=> {
             mb: 2,
           }}
         >
-          <Typography variant="caption" color="initial">
+          <Typography variant="caption" color="#fff">
           Budhel Gram Panchayat ©2022. [] Limited
           </Typography>
         </Box>
